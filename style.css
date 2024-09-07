@@ -1,0 +1,790 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FCF43D;
+    border-radius: 6px; 
+}
+
+body{
+    background: #000;
+    font-family: 'Poppins',sans-serif;
+}
+
+p,h1,h2,h3{
+    color: #fff;
+}
+
+/* =============================== header ============================== */
+
+.header{
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.icon-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 40px;
+}
+
+.aa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aa .page ,.navbar__links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar__links a{
+    color: #000;
+}
+
+.aa:hover .page{
+    color: #FCF43D;
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.navbar__links a:hover{
+    transition: all 0.2s;
+    transform: scale(1.2);
+    color: #646164;
+}
+
+.aa:hover .a1,
+.aa:hover .a2,
+.aa:hover .a3,
+.aa:hover .a4,
+.aa:hover .a5,
+.aa:hover .a6 {
+    background: #FCF43D;
+    height: 2px; 
+    transition: background 0.3s ease, height 0.3s ease;
+}
+
+.aa.active .page {
+    color: #FCF43D;
+    transform: scale(1.1);
+}
+
+.aa.active .a1,
+.aa.active .a2,
+.aa.active .a3,
+.aa.active .a4,
+.aa.active .a5,
+.aa.active .a6 {
+    background: #FCF43D; 
+    height: 2px;  
+    transition: background 0.3s ease, height 0.3s ease;
+}
+
+.a1, .a2, .a3, .a4, .a5 ,.a6{
+    background: #000; 
+    width: 4px;
+    height: 2px;
+    transition: background 0.3s ease, height 0.3s ease;
+}
+
+.navbar{
+    display: none;
+}
+
+.navbar__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__links a {
+    text-decoration: none;
+}
+
+.navbar__toggle svg {
+    fill: #fff; 
+    width: 20px;
+    height: 20px;
+}
+
+.navbar__toggle:hover svg {
+    fill: #fff; 
+}
+
+.navbar__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0 20px 15px 0;
+    width: 0px;
+    height: 0px;
+} 
+
+/* ============================= speech1 =============================== */
+
+.speech1{
+    display: flex;
+    margin: 5rem ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sp1 h1{
+    margin: 0 0 2rem 0;
+    width: 250px;
+}
+
+.p1{
+    margin: 0 0 4rem 0;
+    width: 400px;
+}
+.into2{
+    display: flex;
+    gap: 10px;
+}
+
+.into22{
+    display: flex;
+    flex-direction: column;
+    align-items:   center ;
+}
+
+.but1{
+    width: 100px;
+    height: 35px;
+    padding: 3px 2px;
+    border-radius: 15px;
+    border: #FCF43D solid 1px;
+    background: #FCF43D;
+    cursor: pointer;
+}
+
+.but1:hover,.but2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem #fff;
+    transition: all 0.2s;
+}
+
+.into11{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.into1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gg{
+    color: #FCF43D;
+    margin: 2rem 0 1rem 0;
+}
+
+/* =============================== speech2 ================================= */
+
+.speech2{
+    display: flex;
+    margin: 0 5rem 5rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.but2{
+    width: 80px;
+    height: 35px;
+    padding: 3px 2px;
+    border-radius: 15px;
+    border: #fff solid 1px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.speech2 img{
+    width: 120px;
+}
+
+.g1{
+    color: #FCF43D;
+    margin: 0 0 1rem 0;
+}
+
+.s2 {
+    width: 300px;
+    margin: 0 0 2rem 0;
+}
+
+.ss{
+    display: flex;
+    gap: 5px;
+}
+
+.sp2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* =============================== speech3 ================================ */
+
+span{
+    color: #FCF43D;
+}
+
+.speech3{
+    margin: 0 5rem 5rem 5rem;
+}
+
+.sp3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prev,.next{
+    background-color: #000;
+    color: #fff;
+    border: #000 solid 1px;
+    cursor: pointer;
+}
+
+.bb{
+    position: absolute;
+    right: 5rem;
+    display: flex;
+    gap: 20px;
+}
+
+.s3{
+    display: flex;
+}
+
+.sss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sp33{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7rem 0 0 0;
+}
+
+.s{
+    position: absolute;
+    left: 19rem;
+    margin: 8rem 0 0 0;
+}
+
+.p2{
+    width: 350px;
+}
+
+.xx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.xx img{
+    width: 110px;
+}
+
+.xx h1{
+    margin: 2rem 0 0 0;
+}
+
+.s33 h1{
+    font-size: 3rem;
+}
+
+.p3{
+    font-size: 0.7rem;
+}
+
+/* ================================= speech4 ================================ */
+
+.sp4{
+    display: flex;
+}
+
+body{
+    margin: 0;
+}
+
+.sp4 img{
+    width: 50%;
+}
+
+.speech4{
+    display: flex;
+    flex-direction: column;
+}
+
+.speech4 h1{
+    margin: 0 0 3rem 0;
+}
+
+.sp44{
+    background: #fff;
+    width: 50%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sp44 input{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    border: #a7a4a7 2px solid;
+}
+
+.speech4 h2,.speech4 p{
+    color: #000;
+}
+
+.sp44 button:hover{
+    box-shadow: 0 0 2rem #000;
+}
+
+/* =================================== footer ================================ */
+
+.footer1{
+    padding: 5rem 0 2rem 0;
+    display: flex;
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.foo1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 a{
+    margin: 0 0 1rem 0;
+}
+
+.footer1 p{
+    margin: 0 0 1rem 0;
+}
+
+.foo1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer1 h2{
+    margin: 0 0 2rem 0;
+}
+
+.footer2{
+    display: flex;
+    padding: 2rem 0rem;
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+.footer2 p{
+    font-size: 0.8rem;
+}
+
+/* ============================================================ */
+
+@media screen and (max-width : 1024px) {
+    .p1{
+        width: 310px;
+    }
+
+    .img1{
+        height: 420px;
+    }
+
+    .nav-bar{
+        gap: 10px;
+    }
+
+    .speech2 img{
+        width: 100px;
+    }
+
+    .sss img{
+        width: 220px;
+    }
+
+    .s{
+        width: 150px;
+        left: 15rem;
+        margin: 5.5rem 0 0 0;
+    }
+
+    .p2{
+        width: 260px;
+    }
+
+    .footer1 ,.footer2{
+        margin: 0 3rem;
+    }
+
+    .speech3,.speech2{
+        margin: 0 3rem 5rem 3rem;
+    }
+
+    .speech1{
+        margin: 3rem;
+    }
+
+    .header{
+        margin: 0 3rem;
+    }
+
+    .footer1 img{
+        width: 270px;
+    }
+
+    .sp44{
+        padding: 3rem;
+    }
+
+    .sp44 h2{
+        font-size: 1.3rem;
+    }
+
+    .sp44 p{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .nav-bar {
+        display: none;
+    }
+    
+    .navbar__toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        display: none;
+        width: 50px;
+        background-color: #fff;
+    }
+    
+    .navbar.active {
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        height: 110vh;
+        width: 60px;
+    }
+
+    .navbar__links a {
+        font-size: 10px;
+        text-decoration: none;
+        padding: 5px;
+        
+    }
+
+    .speech1,.speech2{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .p1{
+        width: 250px;
+        margin: 0 0 2rem 0;
+    }
+
+    .img1{
+        height: 350px;
+    }
+
+    .icon-header p{
+        font-size: 0.8rem;
+    }
+
+    .sp1 h1{
+        margin: 0 0 1rem 0;
+    }
+
+    .gg{
+        margin: 3rem 0 0 0;
+    }
+
+    .sp33{
+        flex-direction: column;
+        margin: 2rem 0 0 0 ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sp3{
+        margin:  0;
+    }
+
+    .sss img{
+        width: 175px;
+    }
+
+    .s{
+        left: 9.5rem;
+        margin: 6rem 0 0 0;
+    }
+
+    .s img{
+        width: 120px;
+    }
+
+    .sss p{
+        font-size: 0.7rem;
+    }
+
+    .sss{
+        margin: 0;
+        position: absolute;
+        left: 0rem;
+    }
+
+    .s3{
+        margin: 0 0 18rem 0;
+    }
+
+    .sp3 h1{
+        font-size: 1.5rem;
+    }
+
+    .bb{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        margin: 2rem 0 0 0;
+    }
+
+    .footer1,.footer2{
+        margin: 0 1.5rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .footer1 p,.footer1 a,.footer1 h2{
+        font-size: 0.7rem;
+    }
+
+    .footer1 img{
+        width: 150px;
+    }
+
+    .footer2 p{
+        font-size: 0.5rem;
+    }
+
+    .sp44{
+        padding: 1.5rem;
+    }
+
+    .sp44 input{
+        width: 170px;
+    }
+
+    .speech3,.speech2{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .speech1{
+        margin: 5rem;
+    }
+
+    .header{
+        margin: 0 5rem;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .header{
+        padding: 0.5rem 3rem;
+    }
+
+    .speech1{
+        padding: 0 3rem;
+    }
+
+    .speech1 h1,.speech2 h1{
+        font-size: 1.5rem;
+        width: 190px;
+    }
+
+    .speech2 h2,.sp3 h1,.speech4 h1{
+        font-size: 1.1rem;
+        width: 200px;
+    }
+
+    .speech1 p,.speech2 p{
+        font-size: 0.7rem;
+    }
+
+    .speech2 img{
+        width: 70px;
+    }
+
+    .img1{
+        height: 250px;
+    }
+
+    .p1{
+        width: 200px;
+    }
+
+    .but1{
+        width: 70px;
+        height: 30px;
+        font-size: 0.68rem;
+    }
+
+    a{
+        font-size: 0.5rem;
+    }
+
+    .into11{
+        gap: 0;
+    }
+
+    .into1{
+        gap: 5px;
+    }
+
+    .icon-header p{
+        font-size: 0.5rem;
+    }
+
+    .sss img{
+        width: 143px;
+    }
+
+    .sss{
+        left: 3rem;
+        gap: 1.2rem;
+    }
+
+    .s{
+        left: 10.5rem;
+        margin: 4.5rem 0 0 0;
+    }
+
+    .s img{
+        width: 90px;
+    }
+
+    .sss p{
+        font-size: 0.5rem;
+    }
+
+    .p2{
+        font-size: 0.7rem;
+        width: 200px;
+    }
+
+    .s3{
+        margin: 0 0 13rem 0;
+    }
+
+    .speech3,.speech2{
+        margin: 0 0.5rem 5rem 0.5rem;
+    }
+
+    .speech1{
+        margin: 0.5rem;
+    }
+
+    .header{
+        margin: 0 0.5rem;
+    }
+
+    .sp4{
+        flex-direction: column;
+    }
+
+    .sp4 img,.sp44{
+        width: 100%;
+    }
+
+    .sp44 input{
+        width: 220px;
+    }
+
+    .sp44 h2{
+        font-size: 1.2rem;
+    }
+
+    .sp44 p{
+        font-size: 0.8rem;
+    }
+
+    .footer1,.footer2{
+        margin: 0 1rem;
+    }
+
+    .footer1 p,.footer1 a,.footer1 h2{
+        font-size: 0.5rem;
+    }
+
+    .footer1 img{
+        width: 120px;
+    }
+
+    .footer2 p{
+        font-size: 0.3rem;
+    }
+}
