@@ -564,14 +564,11 @@ body{
     }
 
     .sp33{
+        position: relative;
         flex-direction: column;
         margin: 2rem 0 0 0 ;
         justify-content: center;
         align-items: center;
-    }
-
-    .sp3{
-        margin:  0;
     }
 
     .sss img{
@@ -579,7 +576,8 @@ body{
     }
 
     .s{
-        left: 9.5rem;
+        position: absolute;
+        left: 10rem;
         margin: 6rem 0 0 0;
     }
 
@@ -714,12 +712,12 @@ body{
     }
 
     .sss{
-        left: 3rem;
+        left: 3.5rem;
         gap: 1.2rem;
     }
 
     .s{
-        left: 10.5rem;
+        left: 11rem;
         margin: 4.5rem 0 0 0;
     }
 
@@ -786,5 +784,9 @@ body{
 
     .footer2 p{
         font-size: 0.3rem;
+    }
+
+    .g1{
+        margin: 2rem 0 1rem 0;
     }
 }
